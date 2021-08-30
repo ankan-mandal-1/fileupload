@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="title" content="Dashboard - Climbly" />
+    <title>Dashboard - Climbly</title>
+    <meta content="Climbly is the simplest notes taking app across all your devices. Climbly is available in all deceives and 100% free" name="description" />
+    <link rel="shortcut icon" type="img/png" href="/images/favicon.png">
+    <meta content="climbly, climbly.in, simple notes taking, climbly notes taking, best and free notes taking app, note taking website climbly" name="keywords" />
+    <meta name="robots" content="noindex">
+        .file{
+            display: block;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-cont"> 
+
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <div class="mobile-profile-box">
+                <img src="/images/no_profile.svg" alt="" class="mobile-profile-img">
+                <div class="profile-edit-outer">
+                    <label>Choose a profile image</label>
+                    <input type="file" name="image" accept="image/*" class="file">
+
+                    <input type="hidden" class="hide-on" name="imguri" value=''>
+                </div>
+                <button class="mobile-profile-edit-save">Save Profile</button>
+            </div>
+        </form>
+        
+        <div class="copyright">Climbly.in &copy; 2021</div>
+    </div>
+</body>
+</html>
