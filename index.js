@@ -34,13 +34,13 @@ app.get('/', (req, res) => {
 
 app.post('/', upload.single('image'), (req, res) => {
     console.log(req.file)
-Res.redirect('/'+req.file.filename)
+res.redirect('/'+req.file.filename)
 })
 
 app.get('/:id', (req, res) => {
- Const id = req.params.id
+ const id = req.params.id
 
-Res.send('imgg', {imgg: id})
+res.render('imgg', {imgg: id})
 })
 
 const port = process.env.PORT || 3000
